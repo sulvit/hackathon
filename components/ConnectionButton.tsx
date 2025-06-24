@@ -102,8 +102,8 @@ export default function ConnectionButton({
             className={`relative w-[120px] h-[120px] rounded-full flex items-center justify-center overflow-hidden bg-white border-4 ${imageBorderClass} shadow-lg`}
           >
             <img
-              src="/sully_ai_logo.jpeg"
-              alt="Sully AI Logo"
+              src="/labkit-v1-crop.png"
+              alt="labkit Logo"
               width={100}
               height={100}
               className="rounded-full transition-shadow duration-300 hover:scale-110 hover:transition-all"

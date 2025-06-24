@@ -31,17 +31,17 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="application-name" content="Sully" />
+        <meta name="application-name" content="Labkit" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Sully" />
-        <meta name="description" content="Sully AI Conversation Agent" />
+        <meta name="apple-mobile-web-app-title" content="Labkit" />
+        <meta name="description" content="Labkit AI Conversation Agent" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         {/* Add theme color for browsers */}
         <meta name="theme-color" content="#f3f4f6" />
         {/* Add Apple touch icon link */}
-        <link rel="apple-touch-icon" href="/sully_ai_logo.jpeg"></link>
+        <link rel="apple-touch-icon" href="/labkit-v1-crop.png"></link>
 
         {/* Consider adding more icon sizes for apple-touch-icon if needed */}
         {/* <link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png"> */}

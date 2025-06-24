@@ -93,8 +93,8 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ handleUserArrived }) => {
     <div className="fixed top-0 left-0 w-screen h-screen flex flex-col justify-center items-center bg-gray-100 z-[9999] text-gray-400">
       <div className="w-[140px] h-[140px] rounded-full mb-10 shadow-lg flex items-center justify-center bg-white">
         <img
-          src="/sully_ai_logo.jpeg"
-          alt="Sully Logo"
+          src="/labkit-v1-crop.png"
+          alt="Labkit Logo"
           className="w-[120px] h-[120px] rounded-full object-cover"
         />
       </div>

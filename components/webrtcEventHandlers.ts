@@ -302,6 +302,18 @@ export const handleOpenAiMessage = (
             onFinalTranscriptForTranslation(finalTranscript, finalLang, itemId);
         }
       }
+    } else if (
+      parsedEvent.type === "conversation.item.input_audio_transcription.failed"
+    ) {
+      dispatch(transcriptionCompleted());
+      const errorReason = parsedEvent.reason || "Unknown reason";
+      const errorText = `Audio transcription failed: ${errorReason}`;
+      addLog(
+        `TRANSCRIPTION_FAILED: ${errorText} (Item ID: ${parsedEvent.item_id})`,
+      );
+      toast.error(errorText);
+      setCurrentAiState("listening");
+      setDirectTranscript(""); // Clear any partial/stale transcript
     } else if (parsedEvent.type === "response.created") {
       addLog(
         `Response created for item ${parsedEvent.response?.item_id || "unknown"}, current AI state: ${currentAiState}`,
